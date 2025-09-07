@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "6ecc190a-3f1c-4f26-86f9-597105b1cf98",
+		"name": "flightradar24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48211762",
+		"_collection_link": "https://johndoetechguy-3924667.postman.co/workspace/John-Doe's-Workspace~18281197-f2dd-46b2-8a2d-c31e013b6876/collection/48211762-6ecc190a-3f1c-4f26-86f9-597105b1cf98?action=share&source=collection_link&creator=48211762"
+	},
+	"item": [
+		{
+			"name": "https://fr24api.flightradar24.com/api/static/airlines/afl/light",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "v1"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b"
+					}
+				],
+				"url": {
+					"raw": "https://fr24api.flightradar24.com/api/static/airlines/afl/light",
+					"protocol": "https",
+					"host": [
+						"fr24api",
+						"flightradar24",
+						"com"
+					],
+					"path": [
+						"api",
+						"static",
+						"airlines",
+						"afl",
+						"light"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://fr24api.flightradar24.com/api/static/airlines/afl/light' \\\n--header 'Accept: application/json' \\\n--header 'Accept-Version: v1' \\\n--header 'Authorization: Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b'"
+			},
+			"response": []
+		},
+		{
+			"name": "live flight-positions count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "v1"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b"
+					}
+				],
+				"url": {
+					"raw": "https://fr24api.flightradar24.com/api/live/flight-positions/count?bounds=50.682%2C46.218%2C14.422%2C22.243",
+					"protocol": "https",
+					"host": [
+						"fr24api",
+						"flightradar24",
+						"com"
+					],
+					"path": [
+						"api",
+						"live",
+						"flight-positions",
+						"count"
+					],
+					"query": [
+						{
+							"key": "bounds",
+							"value": "50.682%2C46.218%2C14.422%2C22.243"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://fr24api.flightradar24.com/api/live/flight-positions/count?bounds=50.682%2C46.218%2C14.422%2C22.243' \\\n--header 'Accept: application/json' \\\n--header 'Accept-Version: v1' \\\n--header 'Authorization: Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b'"
+			},
+			"response": []
+		},
+		{
+			"name": "live light-positions full",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "v1"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b"
+					}
+				],
+				"url": {
+					"raw": "https://fr24api.flightradar24.com/api/live/flight-positions/full?bounds=50.682%2C46.218%2C14.422%2C22.243",
+					"protocol": "https",
+					"host": [
+						"fr24api",
+						"flightradar24",
+						"com"
+					],
+					"path": [
+						"api",
+						"live",
+						"flight-positions",
+						"full"
+					],
+					"query": [
+						{
+							"key": "bounds",
+							"value": "50.682%2C46.218%2C14.422%2C22.243"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://fr24api.flightradar24.com/api/live/flight-positions/full?bounds=50.682%2C46.218%2C14.422%2C22.243' \\\n--header 'Accept: application/json' \\\n--header 'Accept-Version: v1' \\\n--header 'Authorization: Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b'"
+			},
+			"response": []
+		},
+		{
+			"name": "Flight tracks Get positional tracks for a specific flight",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "v1"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b"
+					}
+				],
+				"url": {
+					"raw": "https://fr24api.flightradar24.com/api/flight-tracks?flight_id=34242a02",
+					"protocol": "https",
+					"host": [
+						"fr24api",
+						"flightradar24",
+						"com"
+					],
+					"path": [
+						"api",
+						"flight-tracks"
+					],
+					"query": [
+						{
+							"key": "flight_id",
+							"value": "34242a02"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://fr24api.flightradar24.com/api/flight-tracks?flight_id=34242a02' \\\n--header 'Accept: application/json' \\\n--header 'Accept-Version: v1' \\\n--header 'Authorization: Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b'"
+			},
+			"response": []
+		},
+		{
+			"name": "/flight-summary/full",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Version",
+						"value": "v1"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b"
+					}
+				],
+				"url": {
+					"raw": "https://fr24api.flightradar24.com/api/flight-summary/full?flights=EK184&flight_datetime_from=2025-08-07 20:19:11&flight_datetime_to=2025-08-07 21:19:11",
+					"protocol": "https",
+					"host": [
+						"fr24api",
+						"flightradar24",
+						"com"
+					],
+					"path": [
+						"api",
+						"flight-summary",
+						"full"
+					],
+					"query": [
+						{
+							"key": "flights",
+							"value": "EK184"
+						},
+						{
+							"key": "flight_datetime_from",
+							"value": "2025-08-07 20:19:11"
+						},
+						{
+							"key": "flight_datetime_to",
+							"value": "2025-08-07 21:19:11"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://fr24api.flightradar24.com/api/flight-summary/full?flights=EK184&flight_datetime_from=2025-02-14T01:17:14&flight_datetime_to=2025-02-15T13:17:14' \\\n--header 'Accept: application/json' \\\n--header 'Accept-Version: v1' \\\n--header 'Authorization: Bearer 01991b70-fd47-7052-b734-1d216a8d439b|p1D384ktfFJKqmAT1RbPa6btPODO2TJxaCrgdS7b6de58f7b'"
+			},
+			"response": []
+		}
+	]
+}
